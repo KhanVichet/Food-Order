@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    tools:context=".Activity.SignUpActivity">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Create"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Welcome message, indicates the start of account creation process." />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Create an Account Together"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:textColor="@android:color/darker_gray"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Subtitle message, instructs user to create an account." />
+
+        <!-- Name Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Name"
+                android:importantForAccessibility="yes"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:importantForAccessibility="yes"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="yes">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:importantForAccessibility="yes"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Button to submit sign-up form." />
+
+        <!-- Sign In Link -->
+        <TextView
+            android:id="@+id/signInLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign In"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Link to sign-in page for existing users." />
+</LinearLayout>
